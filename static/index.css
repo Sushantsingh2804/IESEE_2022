@@ -1,0 +1,517 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: 10vh;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black;
+  color: white;
+  z-index: 10;
+}
+
+.nav-header{
+  color: #607d8b;
+}
+.nav-links{
+  width: 50%;
+}
+.nav-links ul{
+  display: flex;
+ justify-content: space-around;
+ list-style: none;
+
+}
+.nav-links a{
+  text-decoration: none;
+  color: #607d8b;
+
+}
+.nav-links a:hover{
+  color: black;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.hero{
+  height: 90vh;
+  width: 100%;
+  background-image: url('hero.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.hero-text{
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(96, 125, 139,0.8) 80% , rgba(255,255, 255, 0.0));
+  padding-left: 140px;
+  padding-right: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero-text h1{
+  font-size: 2.5rem;
+}
+
+.hero-text p{
+  font-size: 1.3rem;
+  color: white;
+  font-weight:200;
+  text-align: justify;
+}
+
+.hero-text a{
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.3rem;
+}
+
+.hero-text a:hover{
+  background:#9ef4fe;
+  border: 2px solid #9ef4fe;
+
+}
+
+.info-text{
+  width: 80%;
+  /* height: 100%; */
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #9ef4fe;
+  border-radius: 5rem;
+
+}
+
+.info-text h1{
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.info-text p{
+  font-size: 1.3rem;
+  color:#607d8b;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.comm-text{
+    width: 100%;
+    min-height: 20vh;
+    background: #607d8b;
+    color: #fff;
+}
+.comm-text h1{
+  text-align: center;
+  padding-top: 2rem;
+}
+.comm-info{
+  padding:2rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.registration-info{
+  width: 100%;
+  background: #607d8b;
+  color: #fff;
+  position:fixed;
+
+}
+.fee-text{
+  width: 80%;
+  /* height: 100%; */
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #9ef4fe;
+  border-radius: 5rem;
+}
+.fee-text h1,h4{
+  margin-top:1.5rem;
+  text-align: center;
+}
+.fee-table{
+margin-top: 2rem;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+th, td {
+  padding: 1rem;
+  border: 2px solid #9ef4fe;
+}
+.fee-text table{
+  border: 2px solid #9ef4fe;
+}
+.ToCenter{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ToCenter a{
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.3rem;
+}
+
+.ToCenter a:hover{
+  background:#9ef4fe;
+  border: 2px solid #9ef4fe;
+}
+footer{
+  border-top: 2rem solid #607d8b;
+  height:60%;
+  background: #fff;
+}
+footer h3{
+    padding: 2rem;
+}
+.Contact{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Contact a{
+  color: #607d8b;
+}
+
+.gallery{
+  margin: auto;
+  margin-top: 10rem;
+  width: 70vw;
+  min-height:80vh;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:"box1 box2 box3"
+                      "box1 box2 box3"
+                      "box4 box5 box6"
+                      "box4 box5 box6";
+
+}
+
+.gallery a{
+  min-height:50vh;
+ text-decoration: none;
+ background-color: white;
+ color:#607d8b;
+ border-radius: 2rem;
+}
+
+.gallery a:nth-child(1){
+  grid-area: box1;
+}
+
+.gallery a:nth-child(2){
+grid-area: box2;
+
+
+}
+.gallery a:nth-child(3){
+grid-area: box3;
+
+}
+.gallery a:nth-child(4){
+grid-area: box4;
+
+}
+.gallery a:nth-child(5){
+grid-area: box5;
+
+}
+.gallery a:nth-child(6){
+grid-area: box6;
+
+}
+
+.img{
+margin-top: 1rem;
+height: 20vh;
+width:20vh;
+border-radius: 100%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.imgQR{
+  margin-top: 1rem;
+  height: 50vh;
+  width:50vh;
+  background:url("qr.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.platinum{
+  background-image: url("002-platinum.png");
+}
+.gold{
+  background-image: url("001-medal.png");
+}
+.silver{
+  background-image: url("003-medals.png")
+}
+
+.track_img{
+margin-top: 1rem;
+height: 20vh;
+width:20vh;
+border-radius: 100%;
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.track1{
+  background-image: url("Dr Ezra Morris.jpg")
+}
+.track2{
+  background-image: url("Nivitha Nixon.jpg")
+}
+.track3{
+  background-image: url("Anesh Dharma Sundar.jpeg")
+}
+.track4{
+  background-image: url("Prakash_S.png")
+}
+.track5{
+  background-image: url("Dr_S_Meenakumari.png")
+}
+.track6{
+  background-image: url("Dr Girija Narasimhan.jpg")
+}
+
+.area{
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+  .area{
+      width: 100%;
+      height:100%;
+      position: sticky;
+      position: fixed
+      top: 0;
+      width: 100%;
+
+
+  }
+
+}
+
+@media screen and (max-width:786px) {
+html{
+  font-size: 60%;
+}
+
+nav{
+  width: 100vw;
+  height: 15vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text{
+  width: 100vw;
+  height: 100%;
+  background:rgba(96, 125, 139,0.8);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text p{
+  font-weight: bold;
+  color: #fff;
+  text-shadow:None;
+  text-align: justify;
+}
+.nav-links ul{
+  flex-direction: column;
+  align-items: center;
+}
+
+.comm-info{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.comm-info ol{
+  padding: 3rem;
+}
+.gallery{
+  grid-template-areas:"box1"
+                      "box1"
+                      "box2"
+                      "box2"
+                      "box3"
+                      "box3"
+                      "box4"
+                      "box4"
+                      "box5"
+                      "box5"
+                      "box6"
+                      "box6";
+
+}
+
+}
